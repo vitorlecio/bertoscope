@@ -1,0 +1,20 @@
+{
+  "_note": "Curated collocation/control word-pair items for Part 3 attention analysis. control_word is another content word in the same sentence, NOT collocated with word_a -- token distance to word_a is reported alongside the collocation distance in the notebook rather than perfectly matched, since that confound (adjacency vs. genuine lexical association) is itself part of the Part 3 finding.",
+  "items": [
+    {"id": "c1", "relation": "amod+noun", "sentence": "She always drinks strong tea in the morning.", "word_a": "strong", "word_b": "tea", "control_word": "morning"},
+    {"id": "c2", "relation": "amod+noun", "sentence": "Heavy rain flooded the streets overnight.", "word_a": "Heavy", "word_b": "rain", "control_word": "streets"},
+    {"id": "c3", "relation": "amod+noun", "sentence": "The report covers a wide range of topics.", "word_a": "wide", "word_b": "range", "control_word": "topics"},
+    {"id": "c4", "relation": "amod+noun", "sentence": "He fell into a deep sleep after the hike.", "word_a": "deep", "word_b": "sleep", "control_word": "hike"},
+    {"id": "c5", "relation": "amod+noun", "sentence": "They grabbed some fast food on the way home.", "word_a": "fast", "word_b": "food", "control_word": "home"},
+    {"id": "c6", "relation": "verb+noun", "sentence": "The board will make a decision by Friday.", "word_a": "make", "word_b": "decision", "control_word": "Friday"},
+    {"id": "c7", "relation": "verb+noun", "sentence": "Let's take a break before the next meeting.", "word_a": "take", "word_b": "break", "control_word": "meeting"},
+    {"id": "c8", "relation": "verb+noun", "sentence": "The campaign aims to raise awareness about recycling.", "word_a": "raise", "word_b": "awareness", "control_word": "recycling"},
+    {"id": "c9", "relation": "verb+noun", "sentence": "Please bear in mind that the office closes early today.", "word_a": "bear", "word_b": "mind", "control_word": "office"},
+    {"id": "c10", "relation": "verb+noun", "sentence": "Try to pay attention during the safety briefing.", "word_a": "pay", "word_b": "attention", "control_word": "briefing"},
+    {"id": "c11", "relation": "adv+adj", "sentence": "The tradition is deeply rooted in local culture.", "word_a": "deeply", "word_b": "rooted", "control_word": "culture"},
+    {"id": "c12", "relation": "adv+adj", "sentence": "It is highly unlikely that the flight will leave on time.", "word_a": "highly", "word_b": "unlikely", "control_word": "flight"},
+    {"id": "c13", "relation": "noun+noun", "sentence": "Investors had high hopes for the new product launch.", "word_a": "high", "word_b": "hopes", "control_word": "launch"},
+    {"id": "c14", "relation": "noun+noun", "sentence": "The underdog team was considered a dark horse in the tournament.", "word_a": "dark", "word_b": "horse", "control_word": "tournament"},
+    {"id": "c15", "relation": "verb+noun", "sentence": "The committee decided to take action immediately.", "word_a": "take", "word_b": "action", "control_word": "immediately"}
+  ]
+}
