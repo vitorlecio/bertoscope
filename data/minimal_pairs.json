@@ -1,5 +1,5 @@
 {
-  "_template_note": "TEMPLATE — only 4 example pairs so far. Expand to ~30 per the project brief: hand-craft syntactic-distractor pairs (same syntactic frame, swapped content words -> should NOT be semantically similar) and control pairs (genuinely similar meaning, different surface form).",
+  "_note": "30 hand-crafted pairs (AI-drafted at the user's request, not personally hand-written — edit/replace freely). 15 syntactic_distractor (same syntactic frame, swapped content words/roles -> opposite or unrelated meaning, both sentences kept grammatically fluent) + 15 control (genuine paraphrases, different surface form, same meaning).",
   "pairs": [
     {
       "id": "syn1",
@@ -16,18 +16,200 @@
       "note": "swapped agent/patient in an identical syntactic frame -> different meaning"
     },
     {
+      "id": "syn3",
+      "type": "syntactic_distractor",
+      "sentence_a": "The teacher gave the student a book.",
+      "sentence_b": "The student gave the teacher a book.",
+      "note": "ditransitive frame, swapped giver/recipient"
+    },
+    {
+      "id": "syn4",
+      "type": "syntactic_distractor",
+      "sentence_a": "The lion was hunted by the man.",
+      "sentence_b": "The man was hunted by the lion.",
+      "note": "passive frame, swapped agent/patient"
+    },
+    {
+      "id": "syn5",
+      "type": "syntactic_distractor",
+      "sentence_a": "John is taller than Mary.",
+      "sentence_b": "Mary is taller than John.",
+      "note": "comparative frame, swapped subjects -> opposite truth value"
+    },
+    {
+      "id": "syn6",
+      "type": "syntactic_distractor",
+      "sentence_a": "The company acquired the startup for ten million dollars.",
+      "sentence_b": "The startup acquired the company for ten million dollars.",
+      "note": "swapped acquirer/acquired"
+    },
+    {
+      "id": "syn7",
+      "type": "syntactic_distractor",
+      "sentence_a": "The doctor examined the patient carefully.",
+      "sentence_b": "The patient examined the doctor carefully.",
+      "note": "swapped agent/patient"
+    },
+    {
+      "id": "syn8",
+      "type": "syntactic_distractor",
+      "sentence_a": "The cat is bigger than the mouse.",
+      "sentence_b": "The mouse is bigger than the cat.",
+      "note": "comparative frame, swapped subjects -> opposite truth value"
+    },
+    {
+      "id": "syn9",
+      "type": "syntactic_distractor",
+      "sentence_a": "She gave him the keys before leaving.",
+      "sentence_b": "He gave her the keys before leaving.",
+      "note": "ditransitive frame, swapped giver/recipient"
+    },
+    {
+      "id": "syn10",
+      "type": "syntactic_distractor",
+      "sentence_a": "The waiter served the customer quickly.",
+      "sentence_b": "The customer served the waiter quickly.",
+      "note": "swapped agent/patient, both readings plausible"
+    },
+    {
+      "id": "syn11",
+      "type": "syntactic_distractor",
+      "sentence_a": "The river flows into the lake.",
+      "sentence_b": "The lake flows into the river.",
+      "note": "spatial relation frame, swapped source/destination"
+    },
+    {
+      "id": "syn12",
+      "type": "syntactic_distractor",
+      "sentence_a": "The manager promoted the employee.",
+      "sentence_b": "The employee promoted the manager.",
+      "note": "swapped agent/patient"
+    },
+    {
+      "id": "syn13",
+      "type": "syntactic_distractor",
+      "sentence_a": "The cause led to the effect.",
+      "sentence_b": "The effect led to the cause.",
+      "note": "abstract causal frame, swapped cause/effect"
+    },
+    {
+      "id": "syn14",
+      "type": "syntactic_distractor",
+      "sentence_a": "The artist painted a portrait of the musician.",
+      "sentence_b": "The musician painted a portrait of the artist.",
+      "note": "swapped agent/patient"
+    },
+    {
+      "id": "syn15",
+      "type": "syntactic_distractor",
+      "sentence_a": "The senator criticized the journalist publicly.",
+      "sentence_b": "The journalist criticized the senator publicly.",
+      "note": "swapped agent/patient"
+    },
+    {
       "id": "ctrl1",
       "type": "control",
       "sentence_a": "The cat is sleeping on the couch.",
       "sentence_b": "A cat is napping on the sofa.",
-      "note": "genuinely similar meaning, different surface form/lexical choice"
+      "note": "genuine paraphrase, different surface form/lexical choice"
     },
     {
       "id": "ctrl2",
       "type": "control",
       "sentence_a": "She bought a new car last week.",
       "sentence_b": "Last week she purchased a brand new vehicle.",
-      "note": "genuinely similar meaning, different surface form/lexical choice"
+      "note": "genuine paraphrase, different surface form/lexical choice"
+    },
+    {
+      "id": "ctrl3",
+      "type": "control",
+      "sentence_a": "The meeting was postponed until next week.",
+      "sentence_b": "They pushed the meeting back to next week.",
+      "note": "genuine paraphrase"
+    },
+    {
+      "id": "ctrl4",
+      "type": "control",
+      "sentence_a": "He finished the marathon in under four hours.",
+      "sentence_b": "He completed the marathon in less than four hours.",
+      "note": "genuine paraphrase, near-synonymous lexical choice"
+    },
+    {
+      "id": "ctrl5",
+      "type": "control",
+      "sentence_a": "The weather is getting colder this week.",
+      "sentence_b": "Temperatures are dropping this week.",
+      "note": "genuine paraphrase, lower lexical overlap"
+    },
+    {
+      "id": "ctrl6",
+      "type": "control",
+      "sentence_a": "The company announced layoffs yesterday.",
+      "sentence_b": "Yesterday the firm revealed job cuts.",
+      "note": "genuine paraphrase, reordered + synonyms"
+    },
+    {
+      "id": "ctrl7",
+      "type": "control",
+      "sentence_a": "She is fluent in three languages.",
+      "sentence_b": "She speaks three languages fluently.",
+      "note": "genuine paraphrase, reworded predicate"
+    },
+    {
+      "id": "ctrl8",
+      "type": "control",
+      "sentence_a": "The restaurant was packed on Friday night.",
+      "sentence_b": "On Friday night, the restaurant was completely full.",
+      "note": "genuine paraphrase, reordered clause"
+    },
+    {
+      "id": "ctrl9",
+      "type": "control",
+      "sentence_a": "He apologized for being late.",
+      "sentence_b": "He said sorry for arriving late.",
+      "note": "genuine paraphrase"
+    },
+    {
+      "id": "ctrl10",
+      "type": "control",
+      "sentence_a": "The book received excellent reviews.",
+      "sentence_b": "Critics praised the book highly.",
+      "note": "genuine paraphrase, different grammatical subject"
+    },
+    {
+      "id": "ctrl11",
+      "type": "control",
+      "sentence_a": "The flight was delayed due to bad weather.",
+      "sentence_b": "Bad weather caused the flight to be delayed.",
+      "note": "genuine paraphrase, active/causal restructuring"
+    },
+    {
+      "id": "ctrl12",
+      "type": "control",
+      "sentence_a": "They renovated the old house completely.",
+      "sentence_b": "The old house was completely remodeled.",
+      "note": "genuine paraphrase, active/passive"
+    },
+    {
+      "id": "ctrl13",
+      "type": "control",
+      "sentence_a": "The scientist published her findings in a journal.",
+      "sentence_b": "Her research results appeared in a journal.",
+      "note": "genuine paraphrase, different grammatical subject"
+    },
+    {
+      "id": "ctrl14",
+      "type": "control",
+      "sentence_a": "Traffic was heavy during rush hour.",
+      "sentence_b": "There was a lot of traffic during rush hour.",
+      "note": "genuine paraphrase, lower lexical overlap"
+    },
+    {
+      "id": "ctrl15",
+      "type": "control",
+      "sentence_a": "The children were excited about the trip.",
+      "sentence_b": "The kids couldn't wait for the trip.",
+      "note": "genuine paraphrase, idiomatic rewording"
     }
   ]
 }
