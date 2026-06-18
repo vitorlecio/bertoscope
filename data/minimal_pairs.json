@@ -1,0 +1,33 @@
+{
+  "_template_note": "TEMPLATE — only 4 example pairs so far. Expand to ~30 per the project brief: hand-craft syntactic-distractor pairs (same syntactic frame, swapped content words -> should NOT be semantically similar) and control pairs (genuinely similar meaning, different surface form).",
+  "pairs": [
+    {
+      "id": "syn1",
+      "type": "syntactic_distractor",
+      "sentence_a": "The trophy doesn't fit in the suitcase because it is too big.",
+      "sentence_b": "The suitcase doesn't fit in the trophy because it is too big.",
+      "note": "swapped subject/object in an identical syntactic frame -> different meaning"
+    },
+    {
+      "id": "syn2",
+      "type": "syntactic_distractor",
+      "sentence_a": "The dog chased the cat across the yard.",
+      "sentence_b": "The cat chased the dog across the yard.",
+      "note": "swapped agent/patient in an identical syntactic frame -> different meaning"
+    },
+    {
+      "id": "ctrl1",
+      "type": "control",
+      "sentence_a": "The cat is sleeping on the couch.",
+      "sentence_b": "A cat is napping on the sofa.",
+      "note": "genuinely similar meaning, different surface form/lexical choice"
+    },
+    {
+      "id": "ctrl2",
+      "type": "control",
+      "sentence_a": "She bought a new car last week.",
+      "sentence_b": "Last week she purchased a brand new vehicle.",
+      "note": "genuinely similar meaning, different surface form/lexical choice"
+    }
+  ]
+}
